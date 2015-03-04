@@ -11,7 +11,11 @@ Plugins
 -------
 
 Advanced Custom Fields	http://www.advancedcustomfields.com/
+
 Digg Digg	http://bufferapp.com/diggdigg
+
 Disable Comments	http://wordpress.org/extend/plugins/disable-comments/	https://github.com/solarissmoke/disable-comments
+
 Google Analytics Dashboard for WP	https://deconf.com/
+
 Responsive Lightbox	http://www.dfactory.eu/plugins/responsive-lightbox/
