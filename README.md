@@ -10,12 +10,12 @@ rsync -avz -e 'ssh -pXXXXX' xxx@xxx.xxx:/home/xxxx/public_html/wp-content/themes
 Plugins
 -------
 
-Advanced Custom Fields	http://www.advancedcustomfields.com/
+[Advanced Custom Fields](http://www.advancedcustomfields.com/)
 
-Digg Digg	http://bufferapp.com/diggdigg
+[Digg Digg](http://bufferapp.com/diggdigg)
 
-Disable Comments	http://wordpress.org/extend/plugins/disable-comments/	https://github.com/solarissmoke/disable-comments
+[Disable Comments](http://wordpress.org/extend/plugins/disable-comments/), [git](https://github.com/solarissmoke/disable-comments)
 
-Google Analytics Dashboard for WP	https://deconf.com/
+[Google Analytics Dashboard for WP](https://deconf.com/)
 
-Responsive Lightbox	http://www.dfactory.eu/plugins/responsive-lightbox/
+[Responsive Lightbox](http://www.dfactory.eu/plugins/responsive-lightbox/)
