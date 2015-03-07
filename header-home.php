@@ -87,8 +87,15 @@
 						</div>
 						<h5 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h5>
 						<h1>Writer</h1>
-						<a href="#primary" class="button"><i class="icon-arrow-down"></i></a>
 						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+						<?php do_action( 'before_sidebar' ); ?>
+						<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+
+							<aside id="search" class="widget header-widgets">
+								<?php get_search_form(); ?>
+							</aside>
+
+						<?php endif; // end ?>
 					</div>
 				</div>
 			</section>

@@ -62,8 +62,16 @@ add_action( 'after_setup_theme', 'laura_jackel_setup' );
  */
 function laura_jackel_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'laura_jackel' ),
+		'name'          => __( 'Header', 'laura_jackel' ),
 		'id'            => 'sidebar-1',
+		'before_widget' => '<aside id="%1$s" class="site-width widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title"><i class="icon-pencil"></i> ',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer', 'laura_jackel' ),
+		'id'            => 'sidebar-2',
 		'before_widget' => '<aside id="%1$s" class="site-width widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title"><i class="icon-pencil"></i> ',
