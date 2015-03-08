@@ -259,7 +259,7 @@ msgstr ""
 
 #: inc/template-tags.php:185
 msgid ""
-"<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by "
+"<span class=\"posted-on\">%1$s</span><span class=\"byline\"> by "
 "%2$s</span>"
 msgstr ""
 

@@ -136,11 +136,12 @@ body {
 }
 .container h1 {
     font-family: $font;
-    font-size:79px;
-    line-height:82px;
-    font-weight:700;
-    letter-spacing:-0.04em;
-    margin-bottom:28px;
+    /*font-size:79px;
+    line-height:82px;*/
+    font-size:40px;
+    line-height:1.4;
+    letter-spacing: 1px;
+    margin-bottom:.5em;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
 }
@@ -155,7 +156,7 @@ body {
     font-size:66px;
     line-height:73px;
     font-weight:700;
-    letter-spacing:-0.04em;
+    letter-spacing: 1px;
     margin:20px 0
 }
 .container h3 {
@@ -163,7 +164,7 @@ body {
     font-size:28px;
     line-height:32px;
     font-weight:700;
-    letter-spacing:-0.05em;
+    letter-spacing: 1px;
     margin:60px 0 40px
 }
 .container h4 {
@@ -171,7 +172,7 @@ body {
     font-size:24px;
     line-height:29px;
     font-weight:700;
-    letter-spacing:-0.05em;
+    letter-spacing: 1px;
     margin:30px 0 20px
 }
 .container h4.list-title {
@@ -392,13 +393,14 @@ sup {
 }
 @media all and (max-width:500px) and (min-width:0) {
     .container h1 {
-        font-size:38px;
-        line-height:42px;
-        margin-bottom:28px
+        font-size: 26px;
+        line-height: 1.4;
+        margin-bottom:.5em;
     }
     .container h1.entry-title, .container h1.widget-title {
-        font-size: 32px;
-        line-height:38px;
+        font-size: 30px;
+        line-height:1.2;
+        letter-spacing: 1px;
     }
     .container h2 {
         font-size:31px;
@@ -483,6 +485,8 @@ sup {
         margin:-2px 5px -4px -5px
     }
 }
+
+
 body {
     height:100%
 }
@@ -763,7 +767,7 @@ body {
     margin-top:50px
 }
 #main-nav-drop .stories .nav-item {
-    margin-bottom:100px
+    /*margin-bottom:100px*/
 }
 #main-nav-drop .stories .nav-item h6 {
     color:$brand
@@ -892,7 +896,7 @@ body {
         margin-top:25px
     }
     #main-nav-drop .stories .nav-item {
-        margin-bottom:65px
+        margin-bottom: 1em;
     }
     #main-nav-drop .social li {
         display:inline-block;
@@ -919,8 +923,18 @@ body {
 .story-container a:hover {
     text-decoration:none
 }
-.story-container h1, .story-container h2, .entry-meta {
-    text-align:center
+.story-container h1, .story-container h2 {
+    text-align:center;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+.entry-meta {
+    text-align:center;
+    letter-spacing: 1px;
+    font-weight: 100;
+    a:hover {
+        text-decoration: underline;
+    }
 }
 @-webkit-keyframes pulser {
     0%, 100% {
@@ -998,6 +1012,10 @@ body {
     height:75px;
     width: 100%;
     transition: all 0.5s ease-in-out;
+    h1 {
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
 }
 #masthead .intro .site-width {
     height: 100%;
@@ -1071,7 +1089,7 @@ body {
         height: 470px;
     }
     #home-feature .intro .copy-width {
-        margin-top:80px
+        margin-top:60px
     }
     #home-feature .intro .author {
         margin-top:50px;
@@ -1160,7 +1178,7 @@ h1.entry-title {
     width: 85%;
     margin: 0 auto;
     font-family: $font;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.1;
     border-radius: $rad;
     a {
@@ -1379,7 +1397,7 @@ aside.widget a {
             text-align: center;
             margin: 2px;
             background: white;
-            @media (min-width: 360px) {
+            @media (min-width: 480px) {
                 width: calc(50% - 8px);
             }
             &:hover {
@@ -1392,11 +1410,22 @@ aside.widget a {
                 line-height: 1.6;
                 font-size: 12px;
                 padding: 4px;
-                @media (min-width: 360px) {
+                @media (min-width: 480px) {
                     font-size: 16px;
                     padding: 5px;
                 }
             }
         }
+    }
+}
+
+
+.entry-content {
+    dl {
+        width: 100% !important;
+    }
+    .wp-caption {
+        margin: 0 auto;
+        max-width: 100%;
     }
 }
